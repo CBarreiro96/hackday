@@ -1,0 +1,226 @@
+/* Improvement to do:
+ - Responsive layout
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+body {
+    margin: 0;
+    box-sizing: border-box;
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: rgb(34, 193, 195);
+    background: linear-gradient(0deg, rgba(34, 193, 195, 1) 0%, rgba(42, 52, 146, 1) 100%);
+}
+
+header {
+    width: 500px;
+    text-align: center;
+    height: 50px;
+    font-size: 30px;
+    font-family: 'Potta One', cursive;
+    margin-bottom: 5px;
+    border-radius: 10px;
+    color: #fff;
+}
+
+.pc-player {
+    width: 400px;
+    height: 60px;
+    background: rgb(246, 247, 246);
+    background: linear-gradient(90deg, rgba(246, 247, 246, 1) 0%, rgba(255, 149, 38, 1) 0%, rgba(246, 235, 20, 1) 100%);
+    display: flex;
+    border-radius: 10px;
+    margin-bottom: 4px;
+}
+
+.pc-player .buttons {
+    width: 100px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.pc-player .buttons button {
+    width: 100px;
+    font-family: 'Potta One', cursive;
+    border-radius: 5px;
+    box-shadow: 3px 1px rgba(0, 0, 0, 0.349);
+    margin-left: 10px;
+    color: #fff;
+    background-color: #000000;
+    font-size: 14px;
+}
+
+.pc-player .options {
+    display: flex;
+    justify-content: space-evenly;
+    margin: auto;
+}
+
+.pc-player .hole {
+    width: 40px;
+    height: 40px;
+    background-color: blue;
+    border-radius: 100%;
+    margin: 10px 10px 10px 9px;
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container {
+    width: 400px;
+    display: flex;
+    justify-content: center;
+}
+
+.container .checker-table {
+    width: 100px;
+    background-color: #FF9526;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    border-radius: 10px;
+}
+
+.container .checker-table .row .hole {
+    width: 36px;
+    height: 36px;
+    background-color: #e67c1f;
+    border: 2px solid #5c330f;
+    border-radius: 10px;
+    margin: 10px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.container .checker-table .row .mini-hole {
+    width: 12px;
+    height: 12px;
+    background-color: rgb(74, 213, 231);
+    margin: 2px;
+    border-radius: 100%;
+}
+
+.container .checker-table .row .full {
+    background-color: black;
+}
+
+.container .checker-table .row .half {
+    background-color: white;
+}
+
+.container .player-table {
+    width: 75%;
+    background-color: #FF9526;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+    margin-left: 10px;
+}
+
+.container .player-table .row {
+    display: flex;
+    justify-content: center;
+}
+
+.container .player-table .row .hole {
+    width: 40px;
+    height: 40px;
+    background-color: #00B1AA;
+    border-radius: 100%;
+    margin: 0px 10px;
+    margin-top: 10px;
+    box-shadow: 3px 5px 5px 0px rgba(29, 28, 28, 0.75);
+}
+
+footer {
+    width: 400px;
+    height: 60px;
+    background-color: #000000;
+    margin-top: 5px;
+    border-radius: 10px;
+    display: flex;
+}
+
+footer .colors {
+    display: flex;
+    width: 75%;
+    justify-content: space-evenly;
+}
+
+footer .buttons {
+    width: 120px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+footer .buttons button {
+    width: 80px;
+    font-family: 'Potta One', cursive;
+    border-radius: 5px;
+    box-shadow: 3px 1px rgba(139, 132, 132, 0.349);
+}
+
+footer .item {
+    width: 40px;
+    height: 40px;
+    border-radius: 100%;
+    margin: 0px 10px;
+    margin-top: 10px;
+}
+
+.colors #blue {
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    background: #00B1AA;
+}
+
+.container .player-table .row .green,
+.options .hole.green,
+.colors #green {
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    background: linear-gradient( 35deg, #0baf19, #d2fcb0);
+}
+
+.container .player-table .row .white,
+.options .hole.white,
+.colors #white {
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    background: linear-gradient( 35deg, #eef1ee, #d0d1cfa8);
+}
+
+.container .player-table .row .red,
+.options .hole.red,
+.colors #red {
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    background: linear-gradient( 35deg, #ff0000, #fcb5b0ec);
+}
+
+.container .player-table .row .empty,
+.options .hole.empty {
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.95);
+    background: linear-gradient( 35deg, #00B1AA, #e6ebffcc);
+}
+
+.container .player-table .row .yellow,
+.options .hole.yellow,
+.colors #yellow {
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    background: linear-gradient( 35deg, #ffe600, #d2fcb0);
+}
+
+.container .player-table .row .fucsia,
+.options .hole.fucsia,
+.colors #fucsia {
+    box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+    background: linear-gradient( 35deg, #dd02fa, #bbb9b99c);
+}
