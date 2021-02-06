@@ -31,7 +31,7 @@ The graphical interface was made on HTML and CSS and flow for the game in JavaSc
 ## Algorithm
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/Flow_Chart.png">
+  <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/images/Flow_Chart.png">
 </p>
 
 
@@ -102,5 +102,5 @@ function gameOver() {
 ## Look at the Board
 
 <center>
-<img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/Mastermind-The-Game.png">
+<img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/images/Mastermind-The-Game.png">
 </center>
