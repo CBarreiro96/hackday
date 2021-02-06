@@ -3,7 +3,7 @@
 Here you can find the Mastermind game version made in Javascript and HTML/CSS
 for the HackDay of the Cohort 12 in Holberton School Campus Bogota - Colombia
 
-              :computer: ¡This is really funny project! :computer:
+               ¡This is really funny project!
 
 
 
@@ -54,12 +54,13 @@ The graphical interface was made on HTML and CSS and flow for the game in JavaSc
 
 2.1) if 2nd Player was selected, the second player must choose the code colors picking each one in the black botton section.
 
-    <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/Select_player.png"> 
-    <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/color_options.png"> 
+    <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/images/Select_player.png"> 
+
+    <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/images/color_options.png"> 
 
 3) Pick 4 desired colors to guess the code. (Until you pick the 4 colors, you can hit the "Undo" button)
 
-<img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/color_options.png">
+<img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/images/color_options.png">
 
 4) Analyze the feedback:
 
@@ -67,7 +68,7 @@ The graphical interface was made on HTML and CSS and flow for the game in JavaSc
 
 4.2) Each white dot means only a match in color, not in position.
 
-   <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/checker.png"> 
+   <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/images/checker.png"> 
 
 5) You have 9 rounds to try, after that you lose and the machine will show you the correct ansquer
 
@@ -80,23 +81,6 @@ The graphical interface was made on HTML and CSS and flow for the game in JavaSc
 ## Want to peek a pice of the code?
 
 ```javascript
-// Checks the answer against the final code & adds the corresponding class
-function check(colors) {
-    const checks = [];
-    const pendingChecks = [...final]; //Copy of final
-    //Checks color and position
-    colors.forEach((color, index) => {
-        if (final[index] === color) {
-            checks.push("full");
-            pendingChecks[index] = "checked";
-        } else if (pendingChecks.includes(color) && final.includes(color)) {
-            checks.push("half");
-            let temp = pendingChecks.indexOf(color)
-            pendingChecks[temp] = "checked";
-        }
-    })
-    return checks;
-}
 ```
 
 
