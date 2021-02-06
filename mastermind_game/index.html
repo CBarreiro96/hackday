@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <title>Document</title>
+</head>
+
+<body>
+    <header>MasterMind - The Game</header>
+    <div class="pc-player">
+        <div class="buttons">
+            <button class="pcplayer" id="pcplayer" onclick="pcGame()">PC Player</button>
+            <button id="2player" onclick="secondPlayerGame()">2nd Player</button>
+        </div>
+        <div class="options">
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+            <div class="hole"></div>
+        </div>
+    </div>
+    <div class="container">
+
+        <div class="checker-table">
+            <div class="row" id="row-1">
+                <div class="hole">
+                    <div class="mini-hole" id="mini-1"></div>
+                    <div class="mini-hole" id="mini-2"></div>
+                    <div class="mini-hole" id="mini-3"></div>
+                    <div class="mini-hole" id="mini-4"></div>
+                </div>
+                <div class="hole">
+                    <div class="mini-hole" id="mini-1"></div>
+                    <div class="mini-hole" id="mini-2"></div>
+                    <div class="mini-hole" id="mini-3"></div>
+                    <div class="mini-hole" id="mini-4"></div>
+                </div>
+                <div class="hole">
+                    <div class="mini-hole" id="mini-1"></div>
+                    <div class="mini-hole" id="mini-2"></div>
+                    <div class="mini-hole" id="mini-3"></div>
+                    <div class="mini-hole" id="mini-4"></div>
+                </div>
+                <div class="hole">
+                    <div class="mini-hole" id="mini-1"></div>
+                    <div class="mini-hole" id="mini-2"></div>
+                    <div class="mini-hole" id="mini-3"></div>
+                    <div class="mini-hole" id="mini-4"></div>
+                </div>
+                <div class="hole">
+                    <div class="mini-hole" id="mini-1"></div>
+                    <div class="mini-hole" id="mini-2"></div>
+                    <div class="mini-hole" id="mini-3"></div>
+                    <div class="mini-hole" id="mini-4"></div>
+                </div>
+                <div class="hole">
+                    <div class="mini-hole" id="mini-1"></div>
+                    <div class="mini-hole" id="mini-2"></div>
+                    <div class="mini-hole" id="mini-3"></div>
+                    <div class="mini-hole" id="mini-4"></div>
+                </div>
+                <div class="hole">
+                    <div class="mini-hole" id="mini-1"></div>
+                    <div class="mini-hole" id="mini-2"></div>
+                    <div class="mini-hole" id="mini-3"></div>
+                    <div class="mini-hole" id="mini-4"></div>
+                </div>
+                <div class="hole">
+                    <div class="mini-hole" id="mini-1"></div>
+                    <div class="mini-hole" id="mini-2"></div>
+                    <div class="mini-hole" id="mini-3"></div>
+                    <div class="mini-hole" id="mini-4"></div>
+                </div>
+                <div class="hole">
+                    <div class="mini-hole" id="mini-1"></div>
+                    <div class="mini-hole" id="mini-2"></div>
+                    <div class="mini-hole" id="mini-3"></div>
+                    <div class="mini-hole" id="mini-4"></div>
+                </div>
+            </div>
+        </div>
+        <div class="player-table">
+            <div class="row" id="row-1">
+                <div class="hole" id="green"></div>
+                <div class="hole" id="pink"></div>
+                <div class="hole" id="blue"></div>
+                <div class="hole" id="black"></div>
+            </div>
+            <div class="row" id="row-2">
+                <div class="hole" id="yellow"></div>
+                <div class="hole" id="red"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+            </div>
+            <div class="row" id="row-3">
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+            </div>
+            <div class="row" id="row-4">
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+            </div>
+            <div class="row" id="row-5">
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+            </div>
+            <div class="row" id="row-6">
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+            </div>
+            <div class="row" id="row-7">
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+            </div>
+            <div class="row" id="row-8">
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+            </div>
+            <div class="row" id="row-9">
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+                <div class="hole"></div>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="colors">
+            <div class="item green" id="green"></div>
+            <div class="item red" id="red"></div>
+            <div class="item white" id="white"></div>
+            <div class="item yellow" id="yellow"></div>
+            <div class="item fucsia" id="fucsia"></div>
+            <div class="item empty" id="blue"></div>
+        </div>
+        <div class="buttons">
+            <button class="undo" id="undo" onclick="undoGame()">Undo</button>
+            <button id="restart" onclick="restartGame()">Restart</button>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
