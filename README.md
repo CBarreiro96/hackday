@@ -31,7 +31,7 @@ The graphical interface was made on HTML and CSS and flow for the game in JavaSc
 ## Algorithm
 
 <p align="center">
-  <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/Flow_Chart.png">
+  <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/images/Flow_Chart.png">
 </p>
 
 
@@ -54,9 +54,7 @@ The graphical interface was made on HTML and CSS and flow for the game in JavaSc
 
 2.1) if 2nd Player was selected, the second player must choose the code colors picking each one in the black botton section.
 
-    <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/images/Select_player.png"> 
-
-    <img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/images/color_options.png"> 
+<img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/images/Select_player.png"> 
 
 3) Pick 4 desired colors to guess the code. (Until you pick the 4 colors, you can hit the "Undo" button)
 
@@ -81,6 +79,22 @@ The graphical interface was made on HTML and CSS and flow for the game in JavaSc
 ## Want to peek a pice of the code?
 
 ```javascript
+// Alert that show a message to player saying that the game is over
+function gameOver() {
+    if (rowsCompleted == 9 && winner != 4) {
+        let i;
+        for (i = 0; i < 4; i++) {
+            optionColors[i].classList.add(final[i]);
+        }
+        alert("Game Over my friend!!! Restart and Try Again");
+    }
+    if (winner == 4) {
+        for (i = 0; i < 4; i++) {
+            optionColors[i].classList.add(final[i]);
+        }
+        alert("You won!! You are the Best!! Can you make it Again?")
+    }
+}
 ```
 
 
@@ -88,5 +102,5 @@ The graphical interface was made on HTML and CSS and flow for the game in JavaSc
 ## Look at the Board
 
 <center>
-<img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/Mastermind-The-Game.png">
+<img src="https://raw.githubusercontent.com/holberton-bog-0620/hackday/gh-pages/images/Mastermind-The-Game.png">
 </center>
