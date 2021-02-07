@@ -1,9 +1,9 @@
 /* Improvement to do:
- - Responsive layout
+- Responsive layout
 */
 
 @import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Potta+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Domine:wght@700&display=swap');
 body {
     margin: 0;
     box-sizing: border-box;
@@ -56,6 +56,19 @@ header {
     font-size: 14px;
 }
 
+.pc-player .buttons button:hover {
+    cursor: pointer;
+    background-color: #464444;
+}
+
+.pc-player .buttons .active {
+    background-color: rgb(177, 6, 6);
+}
+
+.pc-player .buttons .active:hover {
+    background-color: rgb(248, 36, 36);
+}
+
 .pc-player .options {
     display: flex;
     justify-content: space-evenly;
@@ -69,6 +82,18 @@ header {
     border-radius: 100%;
     margin: 10px 10px 10px 9px;
     box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+.pc-player .options .hole {
+    font-size: 30px;
+    text-align: center;
+    font-family: 'Domine', serif;
+    font-weight: 100;
+    visibility: visible;
+}
+
+.pc-player .options .hole.invisible {
+    visibility: hidden;
 }
 
 .container {
@@ -156,6 +181,10 @@ footer .colors {
     justify-content: space-evenly;
 }
 
+footer .colors .item:hover {
+    cursor: grabbing;
+}
+
 footer .buttons {
     width: 120px;
     display: flex;
@@ -169,6 +198,11 @@ footer .buttons button {
     font-family: 'Potta One', cursive;
     border-radius: 5px;
     box-shadow: 3px 1px rgba(139, 132, 132, 0.349);
+}
+
+footer .buttons button:hover {
+    cursor: pointer;
+    background-color: #464444;
 }
 
 footer .item {
@@ -223,4 +257,29 @@ footer .item {
 .colors #fucsia {
     box-shadow: 3px 5px 5px 0px rgba(0, 0, 0, 0.75);
     background: linear-gradient( 35deg, #dd02fa, #bbb9b99c);
+}
+
+@media screen and (max-width: 400px) {
+    header {
+        width: 360px;
+        color: #000000;
+    }
+    .pc-player {
+        width: 350px;
+        margin-left: 10px;
+    }
+    footer {
+        width: 360px;
+        margin-left: 10px;
+    }
+    .container {
+        margin: 0;
+    }
+    .container .checker-table {
+        width: 60px;
+        margin-left: 10px;
+    }
+    .container .player-table {
+        width: 260px;
+    }
 }
